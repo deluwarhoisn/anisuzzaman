@@ -45,26 +45,46 @@
   </nav>
 
   <!-- 🌟 Hero -->
-  <section id="home"
-           class="hero min-h-screen pt-24 bg-cover bg-center flex flex-col justify-center"
-           style="background-image: url('asset/bg.jpeg')">
-    <div
-      class="hero-content flex flex-col-reverse md:flex-row-reverse items-center gap-8 bg-black/50 p-6 rounded-2xl mx-4">
-      <img src="asset/WhatsApp Image 2025-08-02 at 12.19.08_b82adb13.jpg"
-           class="w-64 md:w-80 rounded-2xl shadow-2xl border-4 border-[#B97A43]" />
-      <div class="text-center md:text-left md:w-1/2">
-        <h1 class="text-3xl md:text-5xl font-bold mb-4">Hi! I’m
-          <span class="text-[#B97A43]">Anisuzzaman Shimul</span></h1>
-        <p class="text-gray-300 leading-relaxed mb-6">
-          I’m a passionate Civil Engineer specializing in infrastructure and building design. I love
-          working with AutoCAD and creating innovative, practical solutions.
-        </p>
-        <button class="btn bg-[#B97A43] hover:bg-[#915d2f] text-white border-none">
-          Explore More
-        </button>
-      </div>
+<section id="home" class="hero min-h-screen pt-24 flex flex-col justify-center relative">
+  <!-- Background -->
+  <div class="absolute inset-0 bg-black/40"></div>
+  <img src="asset/bg.jpeg" class="absolute inset-0 w-full h-full object-cover" alt="Background Image" />
+
+  <!-- Content -->
+  <div class="relative z-10 hero-content flex flex-col-reverse md:flex-row-reverse items-center gap-10 bg-black/30 backdrop-blur-md rounded-3xl p-6 md:p-12 mx-4 md:mx-16 shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+    
+    <!-- Image -->
+    <div class="flex justify-center md:justify-start">
+  <div class="relative group">
+    <img 
+      src="asset/WhatsApp Image 2025-08-02 at 12.19.08_b82adb13.jpg"
+      alt="Anisuzzaman Shimul"
+      class="w-64 md:w-80 rounded-3xl shadow-2xl border-4 border-[#B97A43] object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- Optional overlay text on hover -->
+    <div class="absolute inset-0 rounded-3xl bg-[#B97A43]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center text-white font-semibold text-lg">
+      Anisuzzaman Shimul
     </div>
-  </section>
+  </div>
+</div>
+
+
+    <!-- Text -->
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white drop-shadow-lg">
+        Hi! I’m <span class="text-[#B97A43]">Anisuzzaman Shimul</span>
+      </h1>
+      <p class="text-gray-300 leading-relaxed mb-6 text-lg md:text-xl drop-shadow-sm">
+        I’m a passionate Civil Engineer specializing in infrastructure and building design. I love
+        working with AutoCAD and creating innovative, practical solutions.
+      </p>
+      <button class="px-6 py-3 bg-[#B97A43] hover:bg-[#915d2f] text-white font-semibold rounded-lg shadow-md transition-all duration-300">
+        Explore More
+      </button>
+    </div>
+  </div>
+</section>
+
 
   <!-- 🌟 About -->
   <section id="about" class="py-16 px-6 md:px-20 bg-[#120A33]">
@@ -75,34 +95,43 @@
       </p>
     </div>
 
-    <div class="flex flex-col lg:flex-row items-center gap-10">
-      <div class="lg:w-1/2">
-        <img src="asset/about.jpg"
-             class="rounded-2xl shadow-lg w-full md:w-3/4 border-4 border-[#B97A43] mx-auto" />
-      </div>
-
-      <div class="lg:w-1/2 text-center lg:text-left">
-        <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
-        <p class="text-gray-300 leading-relaxed mb-6">
-          I'm <span class="text-[#B97A43] font-bold">Anisuzzaman Shimul</span>,
-          a professional Civil Engineer with a passion for sustainable
-          design and efficient project management.
-        </p>
-
-        <ul class="text-gray-400 space-y-2 mb-6 text-left inline-block">
-          <li>🏗️ 5+ years of industry experience</li>
-          <li>📐 Skilled in AutoCAD, Revit, and SketchUp</li>
-          <li>🏢 Worked on various structural projects</li>
-          <li>🌍 Based in Bangladesh</li>
-        </ul>
-
-        <a href="#contact">
-          <button class="btn bg-[#B97A43] hover:bg-[#915d2f] text-white border-none">
-            Let’s Connect
-          </button>
-        </a>
+    <div class="flex flex-col lg:flex-row items-center gap-10 py-12 px-4 lg:px-16 bg-[#1a1a1a]">
+  <!-- Image Section -->
+  <div class="lg:w-1/2 flex justify-center lg:justify-start">
+    <div class="relative group">
+      <img 
+        src="asset/shimul.jpg"
+        alt="Anisuzzaman Shimul"
+        class="rounded-3xl shadow-2xl w-full md:w-3/4 border-4 border-[#B97A43] transition-transform duration-500 transform group-hover:scale-105"
+      />
+      <div class="absolute inset-0 bg-[#B97A43]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center text-white font-semibold text-lg">
+        Anisuzzaman Shimul
       </div>
     </div>
+  </div>
+
+  <!-- Text Section -->
+  <div class="lg:w-1/2 text-center lg:text-left">
+    <h3 class="text-3xl font-bold mb-4 text-white">Who I Am</h3>
+    <p class="text-gray-300 leading-relaxed mb-6 text-lg">
+      I'm <span class="text-[#B97A43] font-bold">Anisuzzaman Shimul</span>, a professional Civil Engineer with a passion for sustainable design and efficient project management.
+    </p>
+
+    <ul class="text-gray-400 space-y-2 mb-6 text-left inline-block">
+      <li>🏗️ 5+ years of industry experience</li>
+      <li>📐 Skilled in AutoCAD, Revit, and SketchUp</li>
+      <li>🏢 Worked on various structural projects</li>
+      <li>🌍 Based in Bangladesh</li>
+    </ul>
+
+    <a href="#contact">
+      <button class="px-6 py-3 bg-[#B97A43] hover:bg-[#915d2f] text-white font-semibold rounded-lg shadow-md transition-colors duration-300">
+        Let’s Connect
+      </button>
+    </a>
+  </div>
+</div>
+
   </section>
 
   <!-- 🌟 Contact -->
