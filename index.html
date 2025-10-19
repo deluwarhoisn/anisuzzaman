@@ -1,91 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anisuzzaman</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-</head>
+    <!-- ✅ Tailwind + DaisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-<body>
-    <section class="bg-[#0A0022] pt-4">
-        <nav class="lg:flex  lg:justify-between m-8 lg:items-center">
-            <h1 class="lg:text-5xl uppercase text-white">Anisuzzaman</h1>
+  <body class="bg-[#0A0022] text-white font-sans scroll-smooth">
+    <!-- 🌟 Navbar Section -->
+    <nav class="flex flex-col lg:flex-row justify-between items-center px-6 py-4 bg-[#0A0022]">
+      <h1 class="text-3xl lg:text-5xl uppercase font-bold mb-4 lg:mb-0">Anisuzzaman</h1>
 
-            <ul class="lg:flex gap-4 lg:text-2xl">
-                <li class="hover:text-white btn lg:btn-primary bg-[#B97A43]"><a href="#home">Home</a></li>
-                <li class="hover:text-white btn lg:btn-primary bg-[#B97A43]"><a href="#contract">Contract</a></li>
-                <li class="hover:text-white btn :btn-primary bg-[#B97A43]"><a href="">About</a></li>
-            </ul>
-        </nav>
-        <div id="home" class="lg:hero lg:bg-base-200 lg:min-h-screen bg-[url(asset/bg.jpeg)] bg-cover bg-center">
-            <div class="lg:hero-content lg:flex-col lg:flex-row-reverse">
-                <img src="asset/WhatsApp Image 2025-08-02 at 12.19.08_b82adb13.jpg"
-                    class="max-w-sm rounded-2xl shadow-2xl" />
-                <div>
-                    <h1 class="text-5xl lg:font-bold text-white">HI ! I am ANISUZZAMAN SHIMUL</h1>
-                    <p class="lg:py-6 text-white">
-                        I am a civil Engineare. I am so much pasionateded at my work. i love to spend my time in
-                        Autocat.Professional Civil Engineer with extensive knowledge of planning and building
-                        infrastructure projects, and eager to join a reputable organization to begin a fulfilling,
-                        lifelong career. Bringing leadership, drive, and over five years of experience to the table
-                    </p>
-                    <button class="btn btn-primary bg-[#B97A43]">Get Started</button>
-                </div>
-            </div>
+      <ul class="flex flex-col lg:flex-row gap-4">
+        <li>
+          <a
+            href="#home"
+            class="btn bg-[#B97A43] hover:bg-[#915d2f] text-white border-none"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="btn bg-[#B97A43] hover:bg-[#915d2f] text-white border-none"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="btn bg-[#B97A43] hover:bg-[#915d2f] text-white border-none"
+            >About</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 🌟 Hero Section -->
+    <section
+      id="home"
+      class="hero min-h-[90vh] bg-cover bg-center"
+      style="background-image: url('asset/bg.jpeg')"
+    >
+      <div
+        class="hero-content flex-col lg:flex-row-reverse bg-black/40 backdrop-blur-md p-6 rounded-2xl"
+      >
+        <img
+          src="asset/WhatsApp Image 2025-08-02 at 12.19.08_b82adb13.jpg"
+          class="max-w-sm rounded-2xl shadow-2xl border-4 border-[#B97A43]"
+          alt="profile"
+        />
+        <div class="lg:w-1/2">
+          <h1 class="text-3xl lg:text-5xl font-bold mb-4">
+            Hi! I am <span class="text-[#B97A43]">Anisuzzaman Shimul</span>
+          </h1>
+          <p class="text-gray-200 leading-relaxed mb-6">
+            I am a Civil Engineer passionate about building and designing
+            infrastructure. I love spending time in AutoCAD and bringing ideas
+            to life. With years of experience in planning and construction, I’m
+            eager to join a reputable organization to grow professionally.
+          </p>
+          <button
+            class="btn bg-[#B97A43] hover:bg-[#915d2f] border-none text-white"
+          >
+            Get Started
+          </button>
         </div>
+      </div>
     </section>
-    <section id="contract">
-        <section class="lg:mx-24">
-            <h1 class="text-center text-6xl lg:my-12 font-extrabold">Conterct</h1>
-            <div class="lg:grid grid-cols-4 lg:gap-4">
-                <!-- Facebook -->
-                <div class="border rounded-xl ">
-                    <img class="rounded-full p-4" src="asset/fb.jpg" alt="">
-                    <div class="flex flex-col mx-4 gap-4 mb-4">
-                        <h2 class="text-xl font-bold">Facebook</h2>
-                        <a href="https://web.facebook.com/anisuzzaman.shimul.2025"><button
-                                class="btn btn-primary bg-[#0C82EC] rounded-xl hover:bg-gray-500">Visit
-                                Profile</button></a>
-                    </div>
-                </div>
-                <!-- instagram -->
-                <div class="border rounded-xl ">
-                    <img class=" p-4" src="asset/insta-removebg-preview.png" alt="">
-                    <div class="flex flex-col mx-4 gap-4 mb-4">
-                        <h2 class="text-xl font-bold">Instagram</h2>
-                        <a href="https://www.instagram.com/anisuzzamanshimul/"><button
-                                class="btn btn-primary bg-[#0C82EC] rounded-xl hover:bg-gray-500">Visit
-                                Profile</button></a>
-                    </div>
-                </div>
-                <!-- WhatsApp -->
-                <div class="border rounded-xl ">
-                    <img class=" p-4" src="asset/whatsapp-removebg-preview.png" alt="">
-                    <div class="flex flex-col mx-4 gap-4 mb-4">
-                        <h2 class="text-xl font-bold">WhatsApp</h2>
-                        <a href="https://wa.me/qr/JYBDEFIXJEJLK1"><button
-                                class="btn btn-primary bg-[#0C82EC] rounded-xl hover:bg-gray-500">Sent
-                                Messege</button></a>
-                    </div>
-                </div>
-                <!-- Gmail -->
-                <div class="border rounded-xl ">
-                    <img class=" p-4" src="asset/Gmail_icon_(2020).svg.png" alt="">
-                    <div class="flex flex-col mx-4 gap-4 mb-4 mt-18">
-                        <h2 class="text-xl font-bold">Gmail</h2>
-                        <a href="https://mail.google.com/mail/u/0/?pli=1#sent?compose=new"><button
-                                class="btn btn-primary bg-[#0C82EC] rounded-xl hover:bg-gray-500">Sent
-                                Email</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-</body>
 
+    <!-- 🌟 Contact Section -->
+    <section id="contact" class="py-16 px-6 lg:px-24 bg-[#0A0022]">
+      <h1 class="text-center text-4xl lg:text-6xl font-extrabold mb-12 text-[#B97A43]">
+        Contact
+      </h1>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Facebook -->
+        <div
+          class="border border-gray-700 rounded-xl bg-[#120A33] p-6 text-center hover:scale-105 transition"
+        >
+          <img
+            class="w-24 h-24 mx-auto rounded-full mb-4"
+            src="asset/fb.jpg"
+            alt="facebook"
+          />
+          <h2 class="text-xl font-bold mb-3">Facebook</h2>
+          <a
+            href="https://web.facebook.com/anisuzzaman.shimul.2025"
+            target="_blank"
+          >
+            <button
+              class="btn bg-[#0C82EC] hover:bg-[#2d9ef3] text-white border-none w-full"
+            >
+              Visit Profile
+            </button>
+          </a>
+        </div>
+
+        <!-- Instagram -->
+        <div
+          class="border border-gray-700 rounded-xl bg-[#120A33] p-6 text-center hover:scale-105 transition"
+        >
+          <img
+            class="w-24 h-24 mx-auto mb-4"
+            src="asset/insta-removebg-preview.png"
+            alt="instagram"
+          />
+          <h2 class="text-xl font-bold mb-3">Instagram</h2>
+          <a
+            href="https://www.instagram.com/anisuzzamanshimul/"
+            target="_blank"
+          >
+            <button
+              class="btn bg-pink-500 hover:bg-pink-600 text-white border-none w-full"
+            >
+              Visit Profile
+            </button>
+          </a>
+        </div>
+
+        <!-- WhatsApp -->
+        <div
+          class="border border-gray-700 rounded-xl bg-[#120A33] p-6 text-center hover:scale-105 transition"
+        >
+          <img
+            class="w-24 h-24 mx-auto mb-4"
+            src="asset/whatsapp-removebg-preview.png"
+            alt="whatsapp"
+          />
+          <h2 class="text-xl font-bold mb-3">WhatsApp</h2>
+          <a href="https://wa.me/qr/JYBDEFIXJEJLK1" target="_blank">
+            <button
+              class="btn bg-green-600 hover:bg-green-700 text-white border-none w-full"
+            >
+              Send Message
+            </button>
+          </a>
+        </div>
+
+        <!-- Gmail -->
+        <div
+          class="border border-gray-700 rounded-xl bg-[#120A33] p-6 text-center hover:scale-105 transition"
+        >
+          <img
+            class="w-24 h-24 mx-auto mb-4"
+            src="asset/Gmail_icon_(2020).svg.png"
+            alt="gmail"
+          />
+          <h2 class="text-xl font-bold mb-3">Gmail</h2>
+          <a
+            href="mailto:anisuzzamanshimul@gmail.com"
+            target="_blank"
+          >
+            <button
+              class="btn bg-red-600 hover:bg-red-700 text-white border-none w-full"
+            >
+              Send Email
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🌟 Footer -->
+    <footer class="bg-[#120A33] text-center py-8 text-gray-400">
+      <p>© 2025 Anisuzzaman Shimul. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
